@@ -20,10 +20,10 @@ Current build status
 
 Current release info
 ====================
-[![Conda Recipe](https://img.shields.io/badge/recipe-r--coxphf-green.svg)](https://anaconda.org/conda-forge/r-coxphf)
-[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-coxphf.svg)](https://anaconda.org/conda-forge/r-coxphf)
-[![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-coxphf.svg)](https://anaconda.org/conda-forge/r-coxphf)
-[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-coxphf.svg)](https://anaconda.org/conda-forge/r-coxphf)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--coxphf-green.svg)](https://anaconda.org/conda-forge/r-coxphf) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-coxphf.svg)](https://anaconda.org/conda-forge/r-coxphf) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-coxphf.svg)](https://anaconda.org/conda-forge/r-coxphf) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-coxphf.svg)](https://anaconda.org/conda-forge/r-coxphf) |
 
 Installing r-coxphf
 ===================
