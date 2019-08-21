@@ -7,7 +7,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: coxphf_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/coxphf_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/coxphf/coxphf_{{ version }}.tar.gz
@@ -16,7 +15,6 @@ source:
 build:
   merge_build_host: True  # [win]
   number: 1004
-  skip: true  # [win32]
   rpaths:
     - lib/R/lib/
     - lib/
@@ -58,9 +56,3 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
