@@ -1,4 +1,4 @@
-{% set version = '1.13' %}
+{% set version = "1.13.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/coxphf_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/coxphf/coxphf_{{ version }}.tar.gz
-  sha256: de0bce775b400e38308123e101c9ec5847c2e0909a148dde3bbd97dd91557599
+  sha256: 657e30bff5af9d7ce90a213d56d7a2ce4d81b1bf815aca5440f5df4cc71e8819
 
 build:
-  merge_build_host: True  # [win]
-  number: 1005
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -46,12 +46,10 @@ test:
 about:
   home: http://cemsiis.meduniwien.ac.at/kb/wf/software/statistische-software/fccoxphf/
   license: GPL-2 and GPL-3
-  summary: Implements Firth's penalized maximum likelihood bias reduction method  for Cox regression
-    which has been shown to provide a solution in case of monotone likelihood (nonconvergence
-    of likelihood function). The program fits profile penalized likelihood confidence
-    intervals which were proved to outperform Wald confidence intervals.
+  summary: Implements Firth's penalized maximum likelihood bias reduction method  for Cox regression which has been shown to provide a solution in case of monotone likelihood (nonconvergence of likelihood function). The program fits profile penalized likelihood confidence intervals which were proved to outperform Wald confidence
+    intervals.
   license_family: GPL
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
