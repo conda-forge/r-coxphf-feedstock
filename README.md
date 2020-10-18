@@ -5,11 +5,9 @@ Home: http://cemsiis.meduniwien.ac.at/kb/wf/software/statistische-software/fccox
 
 Package license: GPL-2 and GPL-3
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-coxphf-feedstock/blob/master/LICENSE.txt)
 
 Summary: Implements Firth's penalized maximum likelihood bias reduction method  for Cox regression which has been shown to provide a solution in case of monotone likelihood (nonconvergence of likelihood function). The program fits profile penalized likelihood confidence intervals which were proved to outperform Wald confidence intervals.
-
-
 
 Current build status
 ====================
@@ -22,51 +20,79 @@ Current build status
     <td>
       <details>
         <summary>
-          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4213&branchName=master">
             <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-coxphf-feedstock?branchName=master">
           </a>
         </summary>
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_r_base3.6target_platformlinux-64</td>
+              <td>linux_64_c_compiler_version7fortran_compiler_version7r_base3.6target_platformlinux-64</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-coxphf-feedstock?branchName=master&jobName=linux&configuration=linux_64_r_base3.6target_platformlinux-64" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4213&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-coxphf-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version7fortran_compiler_version7r_base3.6target_platformlinux-64" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_r_base4.0target_platformlinux-64</td>
+              <td>linux_64_c_compiler_version7fortran_compiler_version7r_base4.0target_platformlinux-64</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-coxphf-feedstock?branchName=master&jobName=linux&configuration=linux_64_r_base4.0target_platformlinux-64" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4213&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-coxphf-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version7fortran_compiler_version7r_base4.0target_platformlinux-64" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_r_base3.6target_platformosx-64</td>
+              <td>linux_64_c_compiler_version9fortran_compiler_version9r_base3.6target_platformlinux-64</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-coxphf-feedstock?branchName=master&jobName=osx&configuration=osx_64_r_base3.6target_platformosx-64" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4213&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-coxphf-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version9fortran_compiler_version9r_base3.6target_platformlinux-64" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_r_base4.0target_platformosx-64</td>
+              <td>linux_64_c_compiler_version9fortran_compiler_version9r_base4.0target_platformlinux-64</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-coxphf-feedstock?branchName=master&jobName=osx&configuration=osx_64_r_base4.0target_platformosx-64" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4213&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-coxphf-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version9fortran_compiler_version9r_base4.0target_platformlinux-64" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_fortran_compiler_version7r_base3.6target_platformosx-64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4213&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-coxphf-feedstock?branchName=master&jobName=osx&configuration=osx_64_fortran_compiler_version7r_base3.6target_platformosx-64" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_fortran_compiler_version7r_base4.0target_platformosx-64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4213&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-coxphf-feedstock?branchName=master&jobName=osx&configuration=osx_64_fortran_compiler_version7r_base4.0target_platformosx-64" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_fortran_compiler_version9r_base3.6target_platformosx-64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4213&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-coxphf-feedstock?branchName=master&jobName=osx&configuration=osx_64_fortran_compiler_version9r_base3.6target_platformosx-64" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_fortran_compiler_version9r_base4.0target_platformosx-64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4213&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-coxphf-feedstock?branchName=master&jobName=osx&configuration=osx_64_fortran_compiler_version9r_base4.0target_platformosx-64" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>win_64_r_base3.6target_platformwin-64</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4213&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-coxphf-feedstock?branchName=master&jobName=win&configuration=win_64_r_base3.6target_platformwin-64" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>win_64_r_base4.0target_platformwin-64</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4213&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-coxphf-feedstock?branchName=master&jobName=win&configuration=win_64_r_base4.0target_platformwin-64" alt="variant">
                 </a>
               </td>
