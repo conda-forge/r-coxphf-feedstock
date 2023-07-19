@@ -1,4 +1,4 @@
-{% set version = "1.13.1" %}
+{% set version = "1.13.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,33 +10,38 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/coxphf_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/coxphf/coxphf_{{ version }}.tar.gz
-  sha256: 657e30bff5af9d7ce90a213d56d7a2ce4d81b1bf815aca5440f5df4cc71e8819
+  sha256: ab41d12039bd30a475f2e6a4ed06b16d71ee26b9cacf87d559a941016840854b
 
 build:
   merge_build_host: true  # [win]
-  number: 3
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
   build:
-    - {{ compiler('c') }}        # [not win]
-    - {{ compiler('fortran') }}  # [not win]
+    - {{ compiler('c') }}              # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
-    - {{ compiler('m2w64_fortran') }}        # [win]
+    - {{ compiler('fortran') }}        # [not win]
+    - {{ compiler('m2w64_fortran') }}  # [win]
     - {{ posix }}filesystem        # [win]
     - {{ posix }}make
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
+    - r-generics
     - r-survival
+    - r-tibble
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
+    - r-generics
     - r-survival
+    - r-tibble
 
 test:
   commands:
@@ -45,11 +50,13 @@ test:
 
 about:
   home: http://cemsiis.meduniwien.ac.at/kb/wf/software/statistische-software/fccoxphf/
-  license: GPL-2 and GPL-3
+  license: GPL-2.0-or-later
   summary: Implements Firth's penalized maximum likelihood bias reduction method  for Cox regression which has been shown to provide a solution in case of monotone likelihood (nonconvergence of likelihood function). The program fits profile penalized likelihood confidence intervals which were proved to outperform Wald confidence
     intervals.
   license_family: GPL
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
