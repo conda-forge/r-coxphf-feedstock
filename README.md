@@ -9,7 +9,7 @@ About r-coxphf
 
 Home: http://cemsiis.meduniwien.ac.at/kb/wf/software/statistische-software/fccoxphf/
 
-Package license: GPL-2 and GPL-3
+Package license: GPL-2.0-or-later
 
 Summary: Implements Firth's penalized maximum likelihood bias reduction method  for Cox regression which has been shown to provide a solution in case of monotone likelihood (nonconvergence of likelihood function). The program fits profile penalized likelihood confidence intervals which were proved to outperform Wald confidence intervals.
 
@@ -18,7 +18,7 @@ About r-coxphf
 
 Home: http://cemsiis.meduniwien.ac.at/kb/wf/software/statistische-software/fccoxphf/
 
-Package license: GPL-2 and GPL-3
+Package license: GPL-2.0-or-later
 
 Summary: Implements Firth's penalized maximum likelihood bias reduction method  for Cox regression which has been shown to provide a solution in case of monotone likelihood (nonconvergence of likelihood function). The program fits profile penalized likelihood confidence intervals which were proved to outperform Wald confidence intervals.
 
