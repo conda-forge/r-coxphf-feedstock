@@ -1,4 +1,4 @@
-{% set version = "1.13.3" %}
+{% set version = "1.13.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/coxphf_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/coxphf/coxphf_{{ version }}.tar.gz
-  sha256: ab41d12039bd30a475f2e6a4ed06b16d71ee26b9cacf87d559a941016840854b
+  sha256: dceb134575a0275eea68ed191bf2635e85f86f0a45af5dfceda4fe3c1f9734d6
 
 build:
   merge_build_host: true  # [win]
